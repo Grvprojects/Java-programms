@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    static void bubble(int[] a){
+        int n=a.length;
+        boolean swap =true;
+        while(swap){
+            swap=false;
+
+    for (int i=0;i<n-1;i++){      //time complexity of this is O(n*n)
+      
+        for (int j=0;j<n-i-1;j++){
+//swapping of two numbers according to their size aspect
+            if (a[i]>a[i+1]){
+                int temp=a[i];
+                a[i]=a[i+1];
+                a[i+1]=temp;
+                swap=true;
+            }}
+    }}
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+    int[] a={11,8,1,2,3,4,5};
+            bubble(a); //calling function of bubble
+            for(int i:a){
+                System.out.print(i+" ");
+            }
+    }}
